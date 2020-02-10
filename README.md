@@ -1,2 +1,2 @@
 # pokemon
-To open click :[https://symbiote-ux.github.io/pokemon/.](https://symbiote-ux.github.io/pokemon/.)
+To open click :[https://symbiote-ux.github.io/pokemon/](https://symbiote-ux.github.io/pokemon/)
