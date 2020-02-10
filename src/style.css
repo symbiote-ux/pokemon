@@ -1,16 +1,18 @@
 .heading {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .pokemon {
+  position: relative;
   text-align: center;
   height: 420px;
   width: 300px;
   margin-bottom: 55px;
   border: 1px solid rgba(173, 243, 234, 0.747);
   border-radius: 8%;
-  box-shadow: -2px -2px 4px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px -2px 4px 3px rgba(0, 0, 0, 0.3);
   background: linear-gradient(
     to bottom,
     rgba(173, 243, 234, 0.747) 0%,
@@ -20,28 +22,58 @@
 
 .pokemonName {
   text-align: center;
-  font-size: larger;
-  margin-bottom: 0px;
+  font-size: 25px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
   text-transform: uppercase;
   font-family: sans-serif;
-  color: rgb(114, 18, 108);
+  color: rgba(36, 31, 31, 0.7);
 }
 
-.pokemon > img:hover {
-  height: 220px;
-  width: auto;
-}
-
-.pokemon > img {
-  height: 200px;
+.front > img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 250px;
   width: auto;
 }
 
 .description {
-  color: rgb(90, 103, 116);
+  color: rgba(8, 2, 2, 0.5);
   padding: 25px 8px;
   line-height: 1.6;
   text-align: justify;
-  font-size: smaller;
+  font-size: 20px;
   font-family: sans-serif;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 420px;
+  width: 300px;
+}
+
+.back {
+  opacity: 0;
+}
+
+.pokemon:hover .front {
+  opacity: 0;
+}
+
+.pokemon:hover .back {
+  opacity: 1;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(66, 112, 112, 0.2),
+    rgb(204, 200, 200, 0.3)
+  );
+}
+
+.power {
+  height: 4px;
+  width: 5px;
 }
